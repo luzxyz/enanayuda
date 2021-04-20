@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "customfont";
+  src: url("fonts/library_3_am-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #1D1D1E;
+  color: white;
+}
+
+h1 {
+  font-family: "customfont";
+}
+
+header p, header h1 {
+  display: inline-block;
+}
+
+section div:first-of-type {
+  width: 300px;
+  margin: auto;
+}
+section div:first-of-type p:nth-child(odd) {
+  text-align: left;
+}
+section div:first-of-type p:nth-child(even) {
+  text-align: right;
+}
+
+.pop_bubble li {
+  list-style-type: none;
+}
+.pop_bubble a {
+  color: white;
+}
+.pop_bubble a:visited {
+  color: white;
+}
+
+/*# sourceMappingURL=pop.css.map */
