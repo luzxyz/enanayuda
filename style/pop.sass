@@ -1,31 +1,80 @@
-@font-face 
+$color-primary:  #1D1D1E
+@font-face
     font-family: 'customfont'
     src: url('fonts/library_3_am-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
 body
-  background-color: #1D1D1E
+  background-color: $color-primary 
   color: white
+  font-family: noto cambria sans-serif
+  margin: 0px
+  padding: 0px
 h1
     font-family: 'customfont'
 
 header
+    text-align: center
     p, h1
       display: inline-block
 
 section
-    div:first-of-type
+    #menu
         width: 300px
         margin: auto
+        p
+          padding: 10px 0px
         p:nth-child(odd)
-            text-align: left
+          background: linear-gradient(to right,blue,rgba(0,0,0,0))
+          padding-left: 6px
+          text-align: left
         p:nth-child(even)
+          background: linear-gradient(to left,blue,rgba(0,0,0,0))
+          padding-right:6px
           text-align: right
+footer
+   display: flex
+   flex-wrap: wrap
+   background-color: blue
+   padding-top: 1em
+   p
+     text-align: center
+     width: 100%
+   div
+     font-size: 14px
+     &:first-of-type
+       width: 50%
+       padding: 0px  4px
+       border-right: thick double white
+     &:nth-child(2)
+       width: 40%
+       background-color: $color-primary
+       margin: auto
+     p
+       text-align: justify
 
 .pop_bubble
+    padding: 0px
+    margin: auto
+    width: 95%
+    ul
+       padding: 0px
+       margin: 0px
     li 
-        list-style-type: none
+      list-style-type: none
+      padding: 0px
+      margin: 0px
+    &:nth-child(even)
+        li
+          background-color: blue
+          background: linear-gradient(to right, blue 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+    &:nth-child(odd)
+        li
+            text-align: right
+            background-color: green
+            background: linear-gradient(to left, green 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
     a
-        color: white
-        &:visited
-            color: white
+       text-align: center
+       color: white
+       &:visited
+           color: white
