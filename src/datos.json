@@ -1,0 +1,54 @@
+{
+ "version" : 21052021,
+ "data" : [
+	"web_front_end" : [
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"back_end" : [
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"server_dev_ops" : [
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"inteligencia_artificial" : [	
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"matematicas" : [	
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"videojuegos" : [	
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		],
+	"otros" : [
+		{
+		"titulo": "",
+	       	"url": "",
+	       	"descripcion": ""
+		}
+		]
+  ]  
+}

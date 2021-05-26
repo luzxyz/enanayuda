@@ -1,4 +1,6 @@
 $color-primary:  #1D1D1E
+$color-primary-darker: #121212
+
 @font-face
     font-family: 'customfont'
     src: url('fonts/library_3_am-webfont.woff2') format('woff2')
@@ -32,6 +34,13 @@ section
           background: linear-gradient(to left,blue,rgba(0,0,0,0))
           padding-right:6px
           text-align: right
+    
+    #pop_datos
+        &-centro
+          text-align: center
+        padding: 20px 0px
+        background-color: $color-primary-darker
+
 footer
    display: flex
    flex-wrap: wrap
@@ -48,10 +57,12 @@ footer
        border-right: thick double white
      &:nth-child(2)
        width: 40%
-       background-color: $color-primary
+       #background-color: $color-primary
        margin: auto
      p
        text-align: justify
+
+
 
 .pop_bubble
     padding: 0px
@@ -60,7 +71,7 @@ footer
     ul
        padding: 0px
        margin: 0px
-    li 
+    li
       list-style-type: none
       padding: 0px
       margin: 0px

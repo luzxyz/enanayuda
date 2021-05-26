@@ -40,6 +40,13 @@ section #menu p:nth-child(even) {
   padding-right: 6px;
   text-align: right;
 }
+section #pop_datos {
+  padding: 20px 0px;
+  background-color: #121212;
+}
+section #pop_datos-centro {
+  text-align: center;
+}
 
 footer {
   display: flex;
@@ -61,7 +68,7 @@ footer div:first-of-type {
 }
 footer div:nth-child(2) {
   width: 40%;
-  background-color: #1D1D1E;
+  #background-color: #1D1D1E;
   margin: auto;
 }
 footer div p {
