@@ -1,7 +1,7 @@
 {
  "version" : 26052021,
  "data" : [
-	"web_front_end" : [
+	"front_end" : [
 		{
 		"titulo": "roadmap.sh - Arbol de aprendizaje",
 	       	"url": "https://roadmap.sh/frontend",
@@ -11,7 +11,8 @@
 		"titulo": "developer.mozilla.org - Documentacion de MDN",
 		"url":"https://developer.mozilla.org/en-US/docs/Web",
 		"descripcion": "[github:@luzxyz] Documentación dedicada de desarrollo front end de Mozilla"
-		},{
+		},
+		{
 		"titulo": "Codepen.io - pruebas front end",
 		"url": "https://codepen.io/pen",
 		"descipcion":"[github:@luzxyz] Página para hacer pruebas front end"
@@ -36,21 +37,21 @@
 		"descripcion": "[github:@luzxyz] Foro / sitio web para entrenar habilidades de cracking"
 		}
 		],
-	"inteligencia_artificial" : [	
+	"ia_analisis" : [	
 		{
 		"titulo": "resarch.google - Google datasets",
 	       	"url": "https://research.google/tools/datasets/",
 	       	"descripcion": "[github:@luzxyz] Datasets de google"
 		}
 		],
-	"matematicas" : [	
+	"matematicas" : [
 		{
 		"titulo": "wolframalpha.com - servicio robusto de matemáticas",
 	       	"url": "https://www.wolframalpha.com/",
 	       	"descripcion": "[github:@luzxyz] Servicio web para evaluar procesos amplios de matemáticas"
 		}
 		],
-	"videojuegos" : [	
+	"videojuegos" : [
 		{
 		"titulo": "itch.io - distribuir videojuegos",
 	       	"url": "https://itch.io",
@@ -62,15 +63,18 @@
 		"titulo": "terminal.sexy - personalizar UI en GNU/Linux",
 	       	"url": "terminal.sexy",
 	       	"descripcion": "[github:@luzxyz] Página para diseño de terminales de GNU/Linux"
-		},{
+		},
+		{
 		"titulo": "MIT open courseware",
 	       	"url": "https://www.youtube.com/user/MIT",
 	       	"descripcion": "[github:@luzxyz] cursos abiertos de varias asignaturas que sube el MIT"
-		},{
+		},
+		{
 		"titulo": "JSlint.com - calidad de codigo JS",
 	       	"url": "https://jslint.com",
 	       	"descripcion": "[github:@luzxyz] Página para evaluar calidad de código javascript"
-		},{
+		},
+		{
 		"titulo": "jsonbin.io - Sitio de alojamiento gratuito datos JSON",
 		"url": "https://jsonbin.io/",
 		"descripcion": "[github:@luzxyz] Página de alojamiento datos JSON"
