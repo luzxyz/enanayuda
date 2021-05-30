@@ -5,7 +5,8 @@
   font-style: normal;
 }
 body {
-  background-color: #1D1D1E;
+  background: url("../res/wallpaper_abstract_lvk.png") center no-repeat fixed;
+  background-size: cover;
   color: white;
   font-family: noto cambria sans-serif;
   margin: 0px;
@@ -22,6 +23,10 @@ header {
 header p, header h1 {
   display: inline-block;
 }
+header img {
+  width: 40px;
+  height: auto;
+}
 
 section #menu {
   width: 300px;
@@ -31,12 +36,12 @@ section #menu p {
   padding: 10px 0px;
 }
 section #menu p:nth-child(odd) {
-  background: linear-gradient(to right, blue, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, #4456F5, #3B4ACC);
   padding-left: 6px;
   text-align: left;
 }
 section #menu p:nth-child(even) {
-  background: linear-gradient(to left, blue, rgba(0, 0, 0, 0));
+  background: linear-gradient(to left, #4456F5, #3B4ACC);
   padding-right: 6px;
   text-align: right;
 }
@@ -51,20 +56,22 @@ section #pop_datos-centro {
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
+  background-color: #121212;
+  width: 70%;
+  margin: auto;
+  color: gray;
   padding-top: 1em;
+  font-size: 14px;
+  border-radius: 10px;
 }
 footer p {
   text-align: center;
   width: 100%;
 }
-footer div {
-  font-size: 14px;
-}
 footer div:first-of-type {
   width: 50%;
   padding: 0px 4px;
-  border-right: thick double white;
+  border-right: thick double gray;
 }
 footer div:nth-child(2) {
   width: 40%;
@@ -90,13 +97,11 @@ footer div p {
   margin: 0px;
 }
 .pop_bubble:nth-child(even) li {
-  background-color: blue;
-  background: linear-gradient(to right, blue 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, white 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
 .pop_bubble:nth-child(odd) li {
   text-align: right;
-  background-color: green;
-  background: linear-gradient(to left, green 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to left, white 20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
 }
 .pop_bubble a {
   text-align: center;

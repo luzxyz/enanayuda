@@ -1,13 +1,26 @@
 $color-primary:  #1D1D1E
 $color-primary-darker: #121212
+$bg-abstract: url("../res/wallpaper_abstract_lvk.png")
+
+$color-priori-base: #4456F5
+$color-priori-base-darker: #3B4ACC 
+$color-priori-second: #323DF5
+
+$color-gradient-1: #f3c063 
+$color-gradient-2: #e88077
+$color-gradient-3: #dd388d
 
 @font-face
     font-family: 'customfont'
     src: url('fonts/library_3_am-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
+
 body
-  background-color: $color-primary 
+  //background-color: $color-primary 
+  background: $bg-abstract  center  no-repeat fixed
+  background-size: cover
+
   color: white
   font-family: noto cambria sans-serif
   margin: 0px
@@ -19,6 +32,9 @@ header
     text-align: center
     p, h1
       display: inline-block
+    img
+      width: 40px
+      height: auto
 
 section
     #menu
@@ -27,11 +43,11 @@ section
         p
           padding: 10px 0px
         p:nth-child(odd)
-          background: linear-gradient(to right,blue,rgba(0,0,0,0))
+          background: linear-gradient(to right,$color-priori-base,$color-priori-base-darker)
           padding-left: 6px
           text-align: left
         p:nth-child(even)
-          background: linear-gradient(to left,blue,rgba(0,0,0,0))
+          background: linear-gradient(to left,$color-priori-base,$color-priori-base-darker)
           padding-right:6px
           text-align: right
     
@@ -44,17 +60,21 @@ section
 footer
    display: flex
    flex-wrap: wrap
-   background-color: blue
+   background-color: $color-primary-darker
+   width: 70%
+   margin: auto
+   color: gray
    padding-top: 1em
+   font-size: 14px
+   border-radius: 10px
    p
      text-align: center
      width: 100%
    div
-     font-size: 14px
      &:first-of-type
        width: 50%
        padding: 0px  4px
-       border-right: thick double white
+       border-right: thick double gray
      &:nth-child(2)
        width: 40%
        #background-color: $color-primary
@@ -77,13 +97,11 @@ footer
       margin: 0px
     &:nth-child(even)
         li
-          background-color: blue
-          background: linear-gradient(to right, blue 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+          background: linear-gradient(to right, white 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
     &:nth-child(odd)
         li
             text-align: right
-            background-color: green
-            background: linear-gradient(to left, green 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+            background: linear-gradient(to left, white 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
     a
        text-align: center
        color: white
