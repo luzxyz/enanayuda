@@ -5,7 +5,7 @@
   font-style: normal;
 }
 body {
-  background: url("../res/wallpaper_abstract_lvk.png") center no-repeat fixed;
+  background: url("../res/livelock_spacewaver.png") center no-repeat fixed;
   background-size: cover;
   color: white;
   font-family: noto cambria sans-serif;
@@ -47,7 +47,11 @@ section #menu p:nth-child(even) {
 }
 section #pop_datos {
   padding: 20px 0px;
-  background-color: #121212;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px white solid;
+  margin: auto;
+  background-color: #1D1D1E;
 }
 section #pop_datos-centro {
   text-align: center;
@@ -57,12 +61,14 @@ footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #121212;
+  opacity: 0.85;
   width: 70%;
   margin: auto;
   color: gray;
   padding-top: 1em;
   font-size: 14px;
   border-radius: 10px;
+  border: 2px white solid;
 }
 footer p {
   text-align: center;

@@ -1,6 +1,6 @@
 $color-primary:  #1D1D1E
 $color-primary-darker: #121212
-$bg-abstract: url("../res/wallpaper_abstract_lvk.png")
+$bg-abstract: url("../res/livelock_spacewaver.png")
 
 $color-priori-base: #4456F5
 $color-priori-base-darker: #3B4ACC 
@@ -17,24 +17,26 @@ $color-gradient-3: #dd388d
     font-style: normal
 
 body
-  //background-color: $color-primary 
   background: $bg-abstract  center  no-repeat fixed
   background-size: cover
-
   color: white
   font-family: noto cambria sans-serif
   margin: 0px
   padding: 0px
+
+
 h1
     font-family: 'customfont'
 
 header
-    text-align: center
-    p, h1
-      display: inline-block
-    img
-      width: 40px
-      height: auto
+
+   text-align: center
+
+   p, h1
+     display: inline-block
+   img
+     width: 40px
+     height: auto
 
 section
     #menu
@@ -55,18 +57,24 @@ section
         &-centro
           text-align: center
         padding: 20px 0px
-        background-color: $color-primary-darker
+        width: 80%
+        border-radius: 10px
+        border: 2px white solid
+        margin: auto
+        background-color: $color-primary
 
 footer
    display: flex
    flex-wrap: wrap
    background-color: $color-primary-darker
+   opacity: 0.85
    width: 70%
    margin: auto
    color: gray
    padding-top: 1em
    font-size: 14px
    border-radius: 10px
+   border: 2px white solid
    p
      text-align: center
      width: 100%
