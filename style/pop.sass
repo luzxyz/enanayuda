@@ -5,6 +5,9 @@ $bg-abstract: url("../res/livelock_spacewaver.png")
 $color-priori-base: #4456F5
 $color-priori-base-darker: #3B4ACC 
 $color-priori-second: #323DF5
+$color-gray: #a49c9c
+$color-white: #EEE
+$color-black2: #222
 
 $color-gradient-1: #f3c063 
 $color-gradient-2: #e88077
@@ -61,20 +64,18 @@ section
         border-radius: 10px
         border: 2px white solid
         margin: auto
-        background-color: $color-primary
+        color: black
+        background-color: $color-white
 
 footer
    display: flex
    flex-wrap: wrap
    background-color: $color-primary-darker
-   opacity: 0.85
-   width: 70%
-   margin: auto
-   color: gray
+   color: $color-gray
    padding-top: 1em
    font-size: 14px
    border-radius: 10px
-   border: 2px white solid
+   border: 2px $color-gray solid
    p
      text-align: center
      width: 100%
@@ -82,10 +83,10 @@ footer
      &:first-of-type
        width: 50%
        padding: 0px  4px
-       border-right: thick double gray
+       border-right: thick double $color-gray
      &:nth-child(2)
        width: 40%
-       #background-color: $color-primary
+       //background-color: $color-primary
        margin: auto
      p
        text-align: justify
@@ -99,19 +100,27 @@ footer
     ul
        padding: 0px
        margin: 0px
+       margin-top: 100px
     li
       list-style-type: none
-      padding: 0px
-      margin: 0px
+      padding: 2px 4px
+      margin-bottom: 10px
+      border-top: 10px solid #AAAADD
     &:nth-child(even)
         li
-          background: linear-gradient(to right, white 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+            background-color: $color-black2
+            border-radius: 0px 0px 100px 12px
     &:nth-child(odd)
         li
             text-align: right
-            background: linear-gradient(to left, white 20%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+            background-color: $color-black2
+            border-radius: 0px 0px 12px 100px
     a
        text-align: center
        color: white
+       text-transform: uppercase
+       font-size: 12px
        &:visited
-           color: white
+         color: $color-white
+    p
+       color: $color-white
