@@ -80,6 +80,11 @@ var datos = {
 	   "titulo": "jsonbin.io - Sitio de alojamiento gratuito datos JSON",
 	   "url": "https://jsonbin.io/",
            "descripcion": "[github:@luzxyz] Página de alojamiento datos JSON"
+	   },
+           {
+	   "titulo": "programming-idioms.org - mejores practicas de lenguajes",
+	   "url": "https://www.programming-idioms.org",
+           "descripcion": "[github:@luzxyz] Puedes consultar y (creo) que aportar en esta página, buscas algun tema y eliges que quieres conocer"
 	   }
       ]
   }]
