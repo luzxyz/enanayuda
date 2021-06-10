@@ -112,12 +112,13 @@ footer div p {
 }
 .pop_bubble a {
   text-align: center;
-  color: white;
+  text-decoration: none;
+  color: #AAAAFF;
   text-transform: uppercase;
   font-size: 12px;
 }
 .pop_bubble a:visited {
-  color: #EEE;
+  color: #AAAAFF;
 }
 .pop_bubble p {
   color: #EEE;

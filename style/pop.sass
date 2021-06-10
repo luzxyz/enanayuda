@@ -1,17 +1,4 @@
-$color-primary:  #1D1D1E
-$color-primary-darker: #121212
-$bg-abstract: url("../res/livelock_spacewaver.png")
-
-$color-priori-base: #4456F5
-$color-priori-base-darker: #3B4ACC 
-$color-priori-second: #323DF5
-$color-gray: #a49c9c
-$color-white: #EEE
-$color-black2: #222
-
-$color-gradient-1: #f3c063 
-$color-gradient-2: #e88077
-$color-gradient-3: #dd388d
+@use 'dictionary' as *
 
 @font-face
     font-family: 'customfont'
@@ -105,7 +92,7 @@ footer
       list-style-type: none
       padding: 2px 4px
       margin-bottom: 10px
-      border-top: 10px solid #AAAADD
+      border-top: 10px solid $color-grayblue
     &:nth-child(even)
         li
             background-color: $color-black2
@@ -117,10 +104,11 @@ footer
             border-radius: 100px 0px 12px 100px
     a
        text-align: center
-       color: white
+       text-decoration: none
+       color: #AAAAFF //change colour with function
        text-transform: uppercase
        font-size: 12px
        &:visited
-         color: $color-white
+         color: #AAAAFF
     p
        color: $color-white
