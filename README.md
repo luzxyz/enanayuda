@@ -1,9 +1,13 @@
 ```python
-README_ver = 04062021
+README_ver = 09062021
 ```
 # ENANAYUDA
 
 ENANAYUDA es una página web no amigable con el usuario enfocada en brindar y cooperar, para friquis o similares del desarrollo computacional.
+
+
+Inspirado por una estética cercana del 2007 y tendencias del año actual (2021)
+
 
 -WIP, trabajo en progreso.
 
