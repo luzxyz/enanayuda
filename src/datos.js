@@ -5,6 +5,11 @@ var datos = {
    {  
    "front_end": [
         {
+	  "titulo": "cssbattle.dev - Sitio para reforzar y competir CSS",
+	  "url": "https://cssbattle.dev/",
+	  "descripcion": "[github:@luzxyz] Página que consta de competir en código CSS, donde se tiende a hacer ilustraciones. Puedes organizar tus competencias o competir con otros en la página"
+	},
+        {
 	  "titulo": "roadmap.sh - Arbol de aprendizaje",
 	  "url": "https://roadmap.sh/frontend",
 	  "descripcion": "[github:@luzxyz] Página de referencias para aprender front end en desarrollo web"
