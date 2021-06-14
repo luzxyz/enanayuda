@@ -23,27 +23,62 @@ header {
 header p, header h1 {
   display: inline-block;
 }
+header p {
+  width: 50%;
+  margin: auto;
+}
 header img {
   width: 40px;
   height: auto;
 }
 
 section #menu {
+  margin-top: 15%;
   width: 300px;
   margin: auto;
 }
-section #menu p {
+section #menu div {
+  text-align: center;
+}
+section #menu div:nth-child(odd) {
+  padding-left: 6px;
+}
+section #menu div:nth-child(even) {
+  padding-right: 6px;
+}
+section #menu div:hover > li {
+  background-color: #e88077;
+  font-weight: bold;
   padding: 10px 0px;
 }
-section #menu p:nth-child(odd) {
-  background: linear-gradient(to right, #4456F5, #3B4ACC);
-  padding-left: 6px;
-  text-align: left;
+section #menu div:hover:nth-child(odd) li {
+  background-color: #4456F5;
+  border-radius: 0px 10px;
+  color: white;
+  border: white 3px solid;
 }
-section #menu p:nth-child(even) {
-  background: linear-gradient(to left, #4456F5, #3B4ACC);
-  padding-right: 6px;
-  text-align: right;
+section #menu div:hover:nth-child(even) li {
+  background-color: #3B4ACC;
+  border-radius: 10px 0px;
+  border: white 3px solid;
+  color: white;
+}
+section #menu div:first-child li {
+  border-top: 3px black solid;
+}
+section #menu div:last-child li {
+  border-bottom: 3px black solid;
+}
+section #menu li.menu-boton {
+  color: #0066BB;
+  padding: 10px 0px;
+  list-style-type: none;
+  white-space: nowrap;
+  width: 70%;
+  border-right: 3px black solid;
+  border-left: 3px black solid;
+  transition: all 0.5s ease;
+  background-color: #EEE;
 }
 section #pop_datos {
   padding: 20px 0px;
@@ -61,12 +96,11 @@ section #pop_datos-centro {
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #121212;
-  color: #a49c9c;
+  background-color: #1f2227;
+  color: #A49C9C;
   padding-top: 1em;
   font-size: 14px;
-  border-radius: 10px;
-  border: 2px #a49c9c solid;
+  border: 2px #A49C9C solid;
 }
 footer p {
   text-align: center;
@@ -75,7 +109,7 @@ footer p {
 footer div:first-of-type {
   width: 50%;
   padding: 0px 4px;
-  border-right: thick double #a49c9c;
+  border-right: thick double #A49C9C;
 }
 footer div:nth-child(2) {
   width: 40%;
@@ -102,26 +136,26 @@ footer div p {
   border-top: 10px solid #AAAADD;
 }
 .pop_bubble:nth-child(even) li {
-  background-color: #222;
+  background-color: #1f2227;
   border-radius: 0px 100px 100px 12px;
 }
 .pop_bubble:nth-child(odd) li {
   text-align: right;
-  background-color: #222;
+  background-color: #1f2227;
   border-radius: 100px 0px 12px 100px;
 }
 .pop_bubble a {
   text-align: center;
   text-decoration: none;
-  color: #AAAAFF;
+  color: #AAAADD;
   text-transform: uppercase;
   font-size: 12px;
 }
 .pop_bubble a:visited {
-  color: #AAAAFF;
+  color: #AAAADD;
 }
 .pop_bubble p {
   color: #EEE;
 }
 
-/*# sourceMappingURL=pop.css.map */
+/*# sourceMappingURL=main.css.map */

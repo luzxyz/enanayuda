@@ -1,4 +1,5 @@
 @use 'dictionary' as *
+@use 'functions' as fn
 
 @font-face
     font-family: 'customfont'
@@ -24,28 +25,63 @@ header
 
    p, h1
      display: inline-block
+
+   p
+     width: 50%
+     margin: auto
    img
      width: 40px
      height: auto
 
 section
     #menu
+        margin-top:  15%
         width: 300px
         margin: auto
-        p
+        div
+
+          text-align: center
+
+          &:nth-child(odd)
+            padding-left: 6px
+
+          &:nth-child(even)
+            padding-right: 6px
+
+          &:hover > li
+            background-color: $color-gradient-2
+            font-weight: bold
+            padding: 10px 0px
+
+          &:hover:nth-child(odd) li
+              @include fn.mx_menu_standout
+
+          &:hover:nth-child(even) li
+              @include fn.mx_menu_notstandout
+
+          &:first-child li
+            border-top: 3px black solid
+
+          &:last-child li
+            border-bottom: 3px black solid
+           
+        li.menu-boton
+          color: $color-old-blue
           padding: 10px 0px
-        p:nth-child(odd)
-          background: linear-gradient(to right,$color-priori-base,$color-priori-base-darker)
-          padding-left: 6px
-          text-align: left
-        p:nth-child(even)
-          background: linear-gradient(to left,$color-priori-base,$color-priori-base-darker)
-          padding-right:6px
-          text-align: right
-    
+          list-style-type: none
+          white-space: nowrap
+          width: 70%
+          border-right: 3px black solid
+          border-left: 3px black solid
+          transition: all .5s ease
+          background-color: $color-white
+
+
+
     #pop_datos
         &-centro
           text-align: center
+
         padding: 20px 0px
         width: 80%
         border-radius: 10px
@@ -57,11 +93,10 @@ section
 footer
    display: flex
    flex-wrap: wrap
-   background-color: $color-primary-darker
+   background-color: $color-black2
    color: $color-gray
    padding-top: 1em
    font-size: 14px
-   border-radius: 10px
    border: 2px $color-gray solid
    p
      text-align: center
@@ -105,10 +140,10 @@ footer
     a
        text-align: center
        text-decoration: none
-       color: #AAAAFF //change colour with function
+       color: $color-grayblue //change colour with function
        text-transform: uppercase
        font-size: 12px
        &:visited
-         color: #AAAAFF
+         color: $color-grayblue
     p
        color: $color-white
