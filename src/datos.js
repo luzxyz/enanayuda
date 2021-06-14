@@ -5,6 +5,11 @@ var datos = {
    {  
    "front_end": [
         {
+	  "titulo": "caniuse.com - Sitio para consultar compatibilidad en web",
+	  "url": "https://caniuse.com/ciu/about",
+	  "descripcion": "[github:@luzxyz] Pagina de servicio para consultar si hay soporte o compatibilidad en los navegadores al tratar de usar un método o elemento, seáse CSS, HTML por ejemplo, útil para saber de compatibilidad desde que tiene fuentes confiables"
+	},
+        {
 	  "titulo": "cssbattle.dev - Sitio para reforzar y competir CSS",
 	  "url": "https://cssbattle.dev/",
 	  "descripcion": "[github:@luzxyz] Página que consta de competir en código CSS, donde se tiende a hacer ilustraciones. Puedes organizar tus competencias o competir con otros en la página"
@@ -90,6 +95,16 @@ var datos = {
 	   "titulo": "programming-idioms.org - mejores practicas de lenguajes",
 	   "url": "https://www.programming-idioms.org",
            "descripcion": "[github:@luzxyz] Puedes consultar y (creo) que aportar en esta página, buscas algun tema y eliges que quieres conocer"
+	   },
+           {
+	   "titulo": "jsfiddle.net - almacenamiento de codigo orientado a la web",
+	   "url": "https://jsfiddle.net/",
+           "descripcion": "[github:@luzxyz] En palabras de la propia página, sirve esencialmente para almacenar código y compartirlo en el entorno de su nube, tiene varios propósitos no limitados sólo a las pruebas (testings) o demostrar tu respuesta en stackoverflow"
+	   },
+           {
+	   "titulo": "stackoverflow - Foro de auxilio y soporte a desarrolladores",
+	   "url": "https://stackoverflow.com/",
+           "descripcion": "[github:@luzxyz] En terminos urbanos, yahoo respuestas para desarrolladores, pero más moderado y con una ética más profesional"
 	   }
       ]
   }]
