@@ -7,7 +7,7 @@ var datos = {
         {
 	  "titulo": "caniuse.com - Sitio para consultar compatibilidad en web",
 	  "url": "https://caniuse.com/ciu/about",
-	  "descripcion": "[github:@luzxyz] Pagina de servicio para consultar si hay soporte o compatibilidad en los navegadores al tratar de usar un método o elemento, seáse CSS, HTML por ejemplo, útil para saber de compatibilidad desde que tiene fuentes confiables"
+	  "descripcion": "[github:@luzxyz] Pagina de servicio para consultar si hay soporte o compatibilidad en los navegadores al tratar de usar un método o elemento, seáse CSS, HTML por ejemplo. Útil para saber de compatibilidad desde que tiene fuentes confiables"
 	},
         {
 	  "titulo": "cssbattle.dev - Sitio para reforzar y competir CSS",
@@ -104,7 +104,17 @@ var datos = {
            {
 	   "titulo": "stackoverflow - Foro de auxilio y soporte a desarrolladores",
 	   "url": "https://stackoverflow.com/",
-           "descripcion": "[github:@luzxyz] En terminos urbanos, yahoo respuestas para desarrolladores, pero más moderado y con una ética más profesional"
+           "descripcion": "[github:@luzxyz] Sitio web de duda y discusión sobre varios tópicos para y por desarrolladores. Existen otros dominios enfocados en diferentes ámbitos como UNIX o matemáticas"
+	   },
+           {
+	   "titulo": "file.org - Conocer funciones de extensiones de archivos",
+	   "url": "https://file.org",
+           "descripcion": "[github:@luzxyz] Página que ayuda a conocer el uso de extensiones de archivos"
+	   },
+           {
+	   "titulo": "jsonchecker.com - Validar sintaxis json",
+	   "url": "https://jsonchecker.com",
+           "descripcion": "[github:@luzxyz] Sitio web que ofrece el servicio de evaluar la sintaxis de un texto de formato JSON"
 	   }
       ]
   }]
