@@ -2,10 +2,11 @@
 @use 'dictionary' as *
 @use 'functions' as fn
 
+// font from https://fontlibrary.org/en/font/ttnorms-black, thank you :)
 @font-face
     font-family: 'customfont'
-    src: url('fonts/library_3_am-webfont.woff2') format('woff2')
-    font-weight: normal
+    src: url('/assets/fonts/ttnorms-black/c7abeb11d708b83ba8d5af7a5ed07f46/41e6b47f7ee67679328607d5c74d8a88/TTNormsBlack.otf') format('opentype')
+    font-weight: bold
     font-style: normal
 
 body
@@ -18,21 +19,24 @@ body
 
 
 h1
-    font-family: 'customfont'
+  font-family: 'customfont'
+  font-weight: bold
+  font-style: normal
 
 header
 
-   text-align: center
+   background-color: map.get($prioritary-colors, 'base-alt')
 
    p, h1
      display: inline-block
 
    p
      width: 50%
+     color: map.get($general-colors, 'gray')
      margin: auto
    img
-     width: 40px
-     height: auto
+     width: 150px
+     height: 50px
 
 section
     #menu
@@ -52,7 +56,6 @@ section
           &:hover > li
             background-color: map.get($gradient-colors, '2') 
             font-weight: bold
-            padding: 10px 0px
 
           &:hover:nth-child(odd) li
               @include fn.mx_menu_standout
@@ -62,9 +65,14 @@ section
 
           &:first-child li
             border-top: 3px black solid
+            &:hover
+              @include fn.mx_menu_top
 
           &:last-child li
             border-bottom: 3px black solid
+            &:hover
+              @include fn.mx_menu_bottom
+
            
         li.menu-boton
           color: map.get($general-colors, 'old-blue')
@@ -83,11 +91,8 @@ section
         &-centro
           text-align: center
 
-        padding: 20px 0px
-        width: 80%
+        padding: 20px 40px
         border-radius: 10px
-        border: 2px white solid
-        margin: auto
         color: black
         background-color: map.get($general-colors, 'white') 
 
@@ -98,7 +103,7 @@ footer
    color: map.get($general-colors, 'gray') 
    padding-top: 1em
    font-size: 14px
-   border: 2px map.get($general-colors, 'gray')  solid
+   margin-top: 8em
    p
      text-align: center
      width: 100%
@@ -109,7 +114,7 @@ footer
        border-right: thick double map.get($general-colors, 'gray') 
      &:nth-child(2)
        width: 40%
-       //background-color: map.get($primary-colors, 'normal') 
+       //background-color: map.get($primary-colors, 'normal') ??
        margin: auto
      p
        text-align: justify
@@ -123,33 +128,32 @@ footer
     ul
        padding: 0px
        margin: 0px
-       margin-top: 100px
+       //margin-top: 100px ?? 
     li
       list-style-type: none
       padding: 2px 4px
-      margin-bottom: 10px
-      border-top: 10px solid map.get($general-colors, 'gray-blue') 
+      //margin-bottom: 10px ??
     &:nth-child(even)
-        li
-            background-color: map.get($general-colors, 'black') 
-            border-radius: 0px 100px 100px 12px
+        li:first-child 
+            background-color: map.get($general-colors, 'white') 
+            @include fn.mx_pops_standout
     &:nth-child(odd)
-        li
-            text-align: right
-            background-color: map.get($general-colors, 'black') 
-            border-radius: 100px 0px 12px 100px
+        text-align: right
+        background-color: map.get($general-colors, 'white') 
+        li:first-child
+            @include fn.mx_pops_standout
     a
        text-align: center
        text-decoration: none
-       background-color: lightblue
+       background-color: #9FC8C7
        color: map.get($general-colors, 'black') 
        text-transform: uppercase
        font-size: 12px
 
        &:visited
-         text-decoration:  underline tomato
-         background-color: map.get($general-colors, 'black') 
+         text-decoration:  underline map.get($general-colors, 'old-blue')
+         background-color: map.get($general-colors, 'white') 
          font-weight: bold
-         color: tomato
+         color: map.get($general-colors, 'old-blue')
     p
-       color: map.get($general-colors, 'white') 
+       color: map.get($general-colors, 'black') 

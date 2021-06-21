@@ -1,7 +1,7 @@
 @font-face {
   font-family: "customfont";
-  src: url("fonts/library_3_am-webfont.woff2") format("woff2");
-  font-weight: normal;
+  src: url("/assets/fonts/ttnorms-black/c7abeb11d708b83ba8d5af7a5ed07f46/41e6b47f7ee67679328607d5c74d8a88/TTNormsBlack.otf") format("opentype");
+  font-weight: bold;
   font-style: normal;
 }
 body {
@@ -15,21 +15,24 @@ body {
 
 h1 {
   font-family: "customfont";
+  font-weight: bold;
+  font-style: normal;
 }
 
 header {
-  text-align: center;
+  background-color: #100f16;
 }
 header p, header h1 {
   display: inline-block;
 }
 header p {
   width: 50%;
+  color: #C9BFBF;
   margin: auto;
 }
 header img {
-  width: 40px;
-  height: auto;
+  width: 150px;
+  height: 50px;
 }
 
 section #menu {
@@ -49,25 +52,34 @@ section #menu div:nth-child(even) {
 section #menu div:hover > li {
   background-color: #E88077;
   font-weight: bold;
-  padding: 10px 0px;
 }
 section #menu div:hover:nth-child(odd) li {
   background-color: #4456F5;
   border-radius: 0px 10px;
   color: white;
   border: white 3px solid;
+  border-bottom: 0px;
+  border-top: 0px;
 }
 section #menu div:hover:nth-child(even) li {
   background-color: #3B4ACC;
   border-radius: 10px 0px;
   border: white 3px solid;
   color: white;
+  border-top: 0px;
+  border-bottom: 0px;
 }
 section #menu div:first-child li {
   border-top: 3px black solid;
 }
+section #menu div:first-child li:hover {
+  border-top: white 3px solid;
+}
 section #menu div:last-child li {
   border-bottom: 3px black solid;
+}
+section #menu div:last-child li:hover {
+  border-bottom: white 3px solid;
 }
 section #menu li.menu-boton {
   color: #0066BB;
@@ -81,11 +93,8 @@ section #menu li.menu-boton {
   background-color: #EEE;
 }
 section #pop_datos {
-  padding: 20px 0px;
-  width: 80%;
+  padding: 20px 40px;
   border-radius: 10px;
-  border: 2px white solid;
-  margin: auto;
   color: black;
   background-color: #EEE;
 }
@@ -97,10 +106,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #1f2227;
-  color: #A49C9C;
+  color: #C9BFBF;
   padding-top: 1em;
   font-size: 14px;
-  border: 2px #A49C9C solid;
+  margin-top: 8em;
 }
 footer p {
   text-align: center;
@@ -109,7 +118,7 @@ footer p {
 footer div:first-of-type {
   width: 50%;
   padding: 0px 4px;
-  border-right: thick double #A49C9C;
+  border-right: thick double #C9BFBF;
 }
 footer div:nth-child(2) {
   width: 40%;
@@ -127,39 +136,38 @@ footer div p {
 .pop_bubble ul {
   padding: 0px;
   margin: 0px;
-  margin-top: 100px;
 }
 .pop_bubble li {
   list-style-type: none;
   padding: 2px 4px;
-  margin-bottom: 10px;
-  border-top: 10px solid #AAAADD;
 }
-.pop_bubble:nth-child(even) li {
-  background-color: #1f2227;
-  border-radius: 0px 100px 100px 12px;
+.pop_bubble:nth-child(even) li:first-child {
+  background-color: #EEE;
+  border-top: 5px solid #1f2227;
 }
-.pop_bubble:nth-child(odd) li {
+.pop_bubble:nth-child(odd) {
   text-align: right;
-  background-color: #1f2227;
-  border-radius: 100px 0px 12px 100px;
+  background-color: #EEE;
+}
+.pop_bubble:nth-child(odd) li:first-child {
+  border-top: 5px solid #1f2227;
 }
 .pop_bubble a {
   text-align: center;
   text-decoration: none;
-  background-color: lightblue;
+  background-color: #9FC8C7;
   color: #1f2227;
   text-transform: uppercase;
   font-size: 12px;
 }
 .pop_bubble a:visited {
-  text-decoration: underline tomato;
-  background-color: #1f2227;
+  text-decoration: underline #0066BB;
+  background-color: #EEE;
   font-weight: bold;
-  color: tomato;
+  color: #0066BB;
 }
 .pop_bubble p {
-  color: #EEE;
+  color: #1f2227;
 }
 
 /*# sourceMappingURL=main.css.map */
