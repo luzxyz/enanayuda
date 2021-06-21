@@ -115,7 +115,12 @@ var datos = {
 	   "titulo": "jsonchecker.com - Validar sintaxis json",
 	   "url": "https://jsonchecker.com",
            "descripcion": "[github:@luzxyz] Sitio web que ofrece el servicio de evaluar la sintaxis de un texto de formato JSON"
-	   }
+	   },
+           {
+	  "titulo": "fontlibrary.org - Sitio de fondos de texto FLOSS",
+	  "url": "https://fontlibrary.org/",
+	  "descripcion": "[github:@luzxyz] Fuente alternativa open source y libre a google fonts"
+	}
       ]
   }]
 }
