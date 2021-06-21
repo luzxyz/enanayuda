@@ -1,3 +1,4 @@
+@use 'sass:map'
 @use 'dictionary' as *
 @use 'functions' as fn
 
@@ -49,7 +50,7 @@ section
             padding-right: 6px
 
           &:hover > li
-            background-color: $color-gradient-2
+            background-color: map.get($gradient-colors, '2') 
             font-weight: bold
             padding: 10px 0px
 
@@ -66,7 +67,7 @@ section
             border-bottom: 3px black solid
            
         li.menu-boton
-          color: $color-old-blue
+          color: map.get($general-colors, 'old-blue')
           padding: 10px 0px
           list-style-type: none
           white-space: nowrap
@@ -74,7 +75,7 @@ section
           border-right: 3px black solid
           border-left: 3px black solid
           transition: all .5s ease
-          background-color: $color-white
+          background-color: map.get($general-colors, 'white') 
 
 
 
@@ -88,16 +89,16 @@ section
         border: 2px white solid
         margin: auto
         color: black
-        background-color: $color-white
+        background-color: map.get($general-colors, 'white') 
 
 footer
    display: flex
    flex-wrap: wrap
-   background-color: $color-black2
-   color: $color-gray
+   background-color: map.get($general-colors, 'black') 
+   color: map.get($general-colors, 'gray') 
    padding-top: 1em
    font-size: 14px
-   border: 2px $color-gray solid
+   border: 2px map.get($general-colors, 'gray')  solid
    p
      text-align: center
      width: 100%
@@ -105,10 +106,10 @@ footer
      &:first-of-type
        width: 50%
        padding: 0px  4px
-       border-right: thick double $color-gray
+       border-right: thick double map.get($general-colors, 'gray') 
      &:nth-child(2)
        width: 40%
-       //background-color: $color-primary
+       //background-color: map.get($primary-colors, 'normal') 
        margin: auto
      p
        text-align: justify
@@ -127,28 +128,28 @@ footer
       list-style-type: none
       padding: 2px 4px
       margin-bottom: 10px
-      border-top: 10px solid $color-grayblue
+      border-top: 10px solid map.get($general-colors, 'gray-blue') 
     &:nth-child(even)
         li
-            background-color: $color-black2
+            background-color: map.get($general-colors, 'black') 
             border-radius: 0px 100px 100px 12px
     &:nth-child(odd)
         li
             text-align: right
-            background-color: $color-black2
+            background-color: map.get($general-colors, 'black') 
             border-radius: 100px 0px 12px 100px
     a
        text-align: center
        text-decoration: none
        background-color: lightblue
-       color: $color-black2
+       color: map.get($general-colors, 'black') 
        text-transform: uppercase
        font-size: 12px
 
        &:visited
          text-decoration:  underline tomato
-         background-color: $color-black2
+         background-color: map.get($general-colors, 'black') 
          font-weight: bold
          color: tomato
     p
-       color: $color-white
+       color: map.get($general-colors, 'white') 

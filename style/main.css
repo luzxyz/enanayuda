@@ -47,7 +47,7 @@ section #menu div:nth-child(even) {
   padding-right: 6px;
 }
 section #menu div:hover > li {
-  background-color: #e88077;
+  background-color: #E88077;
   font-weight: bold;
   padding: 10px 0px;
 }
