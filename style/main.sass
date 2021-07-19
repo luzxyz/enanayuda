@@ -2,12 +2,6 @@
 @use 'dictionary' as *
 @use 'functions' as fn
 
-// font from https://fontlibrary.org/en/font/ttnorms-black, thank you :)
-@font-face
-    font-family: 'customfont'
-    src: url('/assets/fonts/ttnorms-black/c7abeb11d708b83ba8d5af7a5ed07f46/41e6b47f7ee67679328607d5c74d8a88/TTNormsBlack.otf') format('opentype')
-    font-weight: bold
-    font-style: normal
 
 body
   background: $bg-abstract  center  no-repeat fixed
@@ -16,10 +10,15 @@ body
   font-family: noto cambria sans-serif
   margin: 0px
   padding: 0px
+  p
+    font-family: 'CousineRegular'
+    font-weight: normal
+    font-style: normal
+    font-size: 12px
 
 
 h1
-  font-family: 'customfont'
+  font-family: 'TTNormsBlack'
   font-weight: bold
   font-style: normal
 
@@ -31,18 +30,23 @@ header
      display: inline-block
 
    p
-     width: 50%
-     color: map.get($general-colors, 'gray')
-     margin: auto
+     color: map.get($general-colors, 'gray-bright')
+     font-size: 14px
+     margin: 0px
+     padding: 0px
    img
      width: 150px
      height: 50px
 
 section
+
     #menu
-        margin-top:  15%
+
         width: 300px
         margin: auto
+        margin-top:  4em
+        margin-bottom: 4em
+                
         div
 
           text-align: center
@@ -88,12 +92,14 @@ section
 
 
     #pop_datos
+        font-size: 14px
         &-centro
           text-align: center
+          font-size: 15px
 
         padding: 20px 40px
         border-radius: 10px
-        color: black
+        color: map.get($general-colors, 'black')
         background-color: map.get($general-colors, 'white') 
 
 footer
@@ -103,7 +109,6 @@ footer
    color: map.get($general-colors, 'gray') 
    padding-top: 1em
    font-size: 14px
-   margin-top: 8em
    p
      text-align: center
      width: 100%
@@ -124,7 +129,7 @@ footer
 .pop_bubble
     padding: 0px
     margin: auto
-    width: 95%
+    width: 75%
     ul
        padding: 0px
        margin: 0px
@@ -156,4 +161,5 @@ footer
          font-weight: bold
          color: map.get($general-colors, 'old-blue')
     p
-       color: map.get($general-colors, 'black') 
+      color: map.get($general-colors, 'black') 
+      font-size: 13px
